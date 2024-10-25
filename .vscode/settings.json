@@ -40,6 +40,19 @@
             "group": "grupo6",
             "database": "mostra",
             "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mostrasteamg6",
+            "database": "mostra",
+            "username": "root"
         }
     ]
 }
