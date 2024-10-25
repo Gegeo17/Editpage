@@ -21,92 +21,68 @@ body{
     opacity: 67%;
 
 }
-
-.suporte-flores{
-    height: 1px;
-}
-
-.flor1{
-    position: relative;
-    z-index: 1;
-    left: 101.2%;
-    bottom: -360px;
-    
-}
-
-.flor2{
-    position: relative;
-    z-index: 1;
-    left: 44%;
-    bottom: -600px;
-}
-
 .mulher-fundo img {
-    position: relative;
+    position: absolute;
     float: right;
-    bottom: 450px;
+    bottom: 40px;
     right: 135px;
-    
+
+}
+.under-content{
+    width:100%;
+    display:inline-flex;
+    gap:3%;
+    margin-top:30%;
 }
 
-.lowcontainer h1 {
-    position: relative;
-    font-family: "Homenaje", sans-serif;
-    color: #B95267;
-    font-size: 70px;
-    font-weight: lighter;
-    top: 90px;
-    transform: translateX(-170px);
+.lowcontainers {
+    bottom: 400px;
+    width: 45%;
 }
-
-.lowcontainer p {
-    position: relative;
+.descContainers{
+    padding-left: 45px;
+}
+.lowcontainers p {
     font-family: "RocknRoll One", sans-serif;
     color: #0C0400;
-    width: 60%;
     font-size: 17px;
     opacity: 67%;
 
 }
 
-.lowcontainer h3 {
+.lowcontainers h3 {
     position: relative;
     font-family: "RocknRoll One", sans-serif;
     color: #000000;
-    width: 60%;
-    font-size: 30px;
+    font-size: 21px;
     white-space: nowrap;
 
 }
 
-.suporte {
-    position: relative;
-    top: 21.8%;
-
+.suporti {
+    display:flex;
+    width:39%;
+    align-items:center;
 }
 
-.suporte section{
-    position: relative;
-    left: 62%;
-    top: 340px;
+.suporti section{
     background-color: #F85F94;
     color: white;
-    width: 580px;
     text-align: center;
     border-radius: 15px;
     padding: 0px 0px 20px 0px;
 }
 
-.suporte section h1{
+.suporti section h1{
     position: relative;
     font-family: "Homenaje", sans-serif;
     font-size: 70px;
     font-weight: lighter;
     margin-top: 100px;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
-.suporte section p{
+.suporti section p{
     position: relative;
     font-family: "RocknRoll One", sans-serif;
     font-size: 18px;
@@ -116,18 +92,147 @@ body{
     left: 20%;
 }
 
-.suporte section span{
+.suporti section span{
     position: relative;
     font-family: "RocknRoll One", sans-serif;
     font-size: 18px;
-    color: #0C0400;
+    color: #ffffff;
 }
 
-.lowcontainer {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 400px;
-    transform: translateX(-400px);
 
+@media (max-width: 1280px) {
+    .titulo {
+        font-size: 60px;
+        padding-left: 40px;
+    }
+
+    .subtitulo p {
+        font-size: 18px;
+    }
+
+    .lowcontainers h1 {
+        font-size: 60px;
+
+    .lowcontainers p {
+        font-size: 16px;
+    }
+
+    .lowcontainers h3 {
+        font-size: 28px;
+    }
+
+    .suporti section {
+        width: 35%;
+        left: 5%;
+    }
+}
+}
+@media (max-width: 992px) {
+    .titulo {
+        font-size: 50px;
+        padding-left: 30px;
+    }
+
+    .subtitulo p {
+        font-size: 16px;
+    }
+
+    .lowcontainers h1 {
+        font-size: 50px;
+    }
+
+    .lowcontainers p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .lowcontainers h3 {
+        font-size: 26px;
+    }
+
+    .suporti section {
+        width: 45%;
+        left: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .under-content{
+        display:block;
+        width:100%;
+        margin-top:0%;
+    }
+    .titulo {
+        font-size: 25px;
+        padding-left: -2px;
+    }
+
+    .subtitulo p {
+        font-size: 14px;
+    }
+
+    .lowcontainers h1 {
+        font-size: 40px;
+    }
+
+    .lowcontainers p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .lowcontainers h3 {
+        font-size: 24px;
+    }
+
+    .suporti{
+        width: 80%;
+        justify-content:center;
+    }
+    .suporti section {
+        width: 100%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .subtitulo p {
+        font-size: 12px;
+    }
+
+    .lowcontainers h1 {
+        font-size: 30px;
+    }
+
+    .lowcontainers p {
+        font-size: 12px;
+        width: 95%;
+    }
+
+    .lowcontainers h3 {
+        font-size: 20px;
+    }
+.suporti {
+        width: 90%;
+        left: 0;
+        justify-content:center;
+        margin-bottom: 4%;
+    }
+
+    .suporti section {
+        width: 80%;
+        left: 0;
+        padding: 10px;
+    }
+
+    .mulher-fundo img {
+        width: 100%;
+        position: static;
+        bottom: auto;
+        right: auto;
+    }
 }

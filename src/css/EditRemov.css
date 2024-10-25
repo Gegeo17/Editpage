@@ -92,7 +92,117 @@
     transform: translateY(-5px);
 }
 
+.EditRemov-Delete {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px; /* Margem reduzida para ficar próximo do botão atualizar */
+    width: 20%; /* Largura reduzida */
+    font-size: 20px; /* Fonte reduzida */
+    left: 40%; /* Centralizado com base na largura reduzida */
+    color: #FF6B6B;
+    padding: 8px; /* Padding reduzido */
+    border-radius: 10px; /* Raio de borda reduzido */
+    cursor: pointer;
+    transition: 0.3s;
+    border: #fff;
+    left: 330px;
+    
+}
+
+.EditRemov-Delete:hover {
+    transform: translateY(-3px); /* Efeito hover leve */
+}
+
 form {
     position: relative;
     z-index: 99;
+}
+
+@media (max-width: 992px) {
+    .secao {
+        width: 50%; /* Ajusta a largura da seção */
+    }
+
+    .EditRemov-Cadastro {
+        position: relative;
+        width: 30%; /* Botões ocupam mais espaço */
+        font-size: 30px; /* Ajusta a fonte */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EditRemov-Delete {
+        width: 20%;
+    }
+
+    .EditRemov-Main form label {
+        font-size: 28px; /* Ajusta a fonte dos rótulos */
+    }
+}
+
+@media (max-width: 768px) {
+    .secao {
+        width: 50%; /* Ajusta a largura da seção */
+    }
+
+    .EditRemov-Cadastro {
+        position: relative;
+        width: 35%; /* Botões ocupam mais espaço */
+        font-size: 24px; /* Ajusta a fonte */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EditRemov-Delete {
+        position: relative;
+        width: 25%;
+        align-items: center;
+        font-size: 18px;
+        left: 40%;
+    }
+
+    .EditRemov-Main form label {
+        font-size: 24px; /* Ajusta a fonte dos rótulos */
+    }
+
+    .EditRemov-input {
+        font-size: 18px; /* Aumenta a área de texto para toque fácil */
+    }
+}
+
+@media (max-width: 576px) {
+    .secao h1 {
+        font-size: 40px; /* Título menor em telas muito pequenas */
+    }
+
+    .EditRemov-Main {
+        padding: 5px; /* Reduz o padding do container */
+    }
+
+    .EditRemov-Main form label {
+        font-size: 20px; /* Ajusta a fonte dos rótulos */
+    }
+
+    .EditRemov-input {
+        padding: 10px; /* Ajusta o padding dos inputs */
+        font-size: 16px; /* Ajusta a fonte dos inputs */
+    }
+
+    .EditRemov-Cadastro {
+        position: relative;
+        width: 35%; /* Botões ocupam mais espaço */
+        font-size: 20px; /* Ajusta a fonte */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EditRemov-Delete {
+        position: relative;
+        width: 23%;
+        align-items: center;
+        font-size: 14px;
+        left: 37.5%;
+    }
 }

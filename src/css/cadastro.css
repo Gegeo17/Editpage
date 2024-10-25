@@ -1,28 +1,24 @@
 body {
     font-family: 'Homenaje', sans-serif;
-    color: #B95267;
+    color: #333;
     margin: 0;
     padding: 0;
-    font-size: bolder;
 }
 
 .form-cadastro {
-    top: 55px;
-    width: 350px;
-    height: 650px;
+    width: 450px;
     padding: 50px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin: 50px auto;
     position: relative;
-    z-index: 999;
+    z-index: 1;
     animation: fadeIn 0.7s ease-in-out;
 }
 
-
 .titulo-cadastro {
-    font-size: 15px;
+    font-size: 30px;
     text-align: center;
     color: #444;
     margin-bottom: 30px;
@@ -31,30 +27,15 @@ body {
     letter-spacing: 1px;
 }
 
-.realizecadastro{
-    position: relative;
-    bottom: 50px;
-
-}
-
-.itens-form{
-    position: relative;
-    bottom: 150%;
-    right: 10px;
-}
-
 .form-item {
-    height: 40px; 
     width: calc(100% - 20px);
-    position: relative;
     padding: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    font-size: 14px; 
+    font-size: 16px;
     background-color: #f9f9f9;
     transition: all 0.3s ease;
-    box-sizing: border-box; 
 }
 
 .form-item:focus {
@@ -64,7 +45,7 @@ body {
 }
 
 .form-submit-cadastro {
-    transform: translateX(110%);
+    transform: translateX(150%);
     padding: 15px;
     border-radius: 33px;
     background: linear-gradient(100deg, #FF4879 17.21%, #D649E3 89.48%);
@@ -80,48 +61,24 @@ body {
     background-color: #4db8ba;
 }
 
-.fundo-cadastro{
-    position: relative;
-    width: 300px;
-    top: -90px;
-    left: 20px;
-}
-
-.fundo-forms{
-    position: relative;
-    right: 350px;
-    bottom: 200px;
-    z-index: -1;
-    opacity: 0%;
-}
-
-.input-container {
-    position: relative;
-    margin-bottom: 20px; 
-}
-
 .error-message {
-    color: #921420;
-    font-size: 18px;
-    height: 15px; 
-    margin-top: 4px; 
-    position: absolute; 
-    top: 100%;
+    color: #e2031a;
+    font-size: 14px;
+    margin-top: 10px;
 }
+
 .success-message {
     color: #28a745;
     font-size: 14px;
     margin-top: 10px;
 }
 
-.password-toggle2 {
+.password-toggle2{
     position: absolute;
     right: 10%;
-    top: 55%;
+    top: 60.6%;
     cursor: pointer;
-    transform: translateY(-50%);
 }
-
 
 @keyframes fadeIn {
     from {
@@ -131,5 +88,74 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1280px) {
+    .form-cadastro {
+        width: 37%; /* Ajustar a largura do formulário */
+        padding: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .form-cadastro {
+        width: 40%; /* Aumentar a responsividade para telas médias */
+        padding: 30px;
+    }
+
+    .titulo-cadastro {
+        font-size: 28px; /* Reduzir um pouco o tamanho da fonte */
+    }
+
+    .form-item {
+        font-size: 15px; /* Ajustar o tamanho da fonte */
+    }
+
+    .form-submit-cadastro {
+        font-size: 16px; /* Reduzir o tamanho do botão */
+    }
+}
+
+@media (max-width: 768px) {
+    .form-cadastro {
+        width: 60%; /* Formulário mais largo em telas pequenas */
+        padding: 20px;
+    }
+
+    .titulo-cadastro {
+        font-size: 26px; /* Diminuir o título */
+    }
+
+    .form-item {
+        font-size: 14px; /* Ajuste adicional do tamanho da fonte */
+    }
+
+    .form-submit-cadastro {
+        font-size: 15px; /* Ajustar o botão */
+    }
+}
+
+@media (max-width: 576px) {
+    .form-cadastro {
+        width: 80%; /* Quase toda a largura da tela */
+        padding: 15px; /* Menos padding */
+    }
+
+    .titulo-cadastro {
+        font-size: 24px; /* Título ainda menor */
+    }
+
+    .form-item {
+        font-size: 13px; /* Reduzir o tamanho da fonte para o formulário */
+    }
+
+    .form-submit-cadastro {
+        font-size: 14px; /* Tamanho do botão */
+    }
+
+    .password-toggle2 {
+        right: 5%; /* Ajustar o botão de visualizar senha */
+        top: 60%; /* Alinhamento melhorado */
     }
 }

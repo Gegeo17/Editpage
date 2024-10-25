@@ -35,6 +35,24 @@ const EditRemov = () => {
         } catch (error) {
             console.error('Erro ao atualizar produto', error);
         }
+    
+        const handleDelete = async () => {
+            try {
+                const response = await axios.delete(`http://localhost:5000/api/produtos/deletar/${id}`);
+                setMessage(response.data.message);
+                setTimeout(() => {
+                    navigate('/loja');
+                }, 2000);
+            } catch (error) {
+                setMessage('Erro ao deletar produto.');
+            }
+        };
+    
+        useEffect(() => {
+            if (!id) {
+                setMessage('ID do produto não fornecido.');
+            }
+        }, [id]);
     };
 
     return (
@@ -57,6 +75,7 @@ const EditRemov = () => {
                     <textarea className="EditRemov-input" name="descricao" value={produto.descricao} onChange={handleChange} placeholder="Descrição" required />
 
                     <button type="submit" className="EditRemov-Cadastro">Atualizar Produto</button>
+                    <button type="button" className="EditRemov-Delete" onClick={confirmDeletion}>Deletar Produto</button>
                 </form>
             </div>
         </div>
